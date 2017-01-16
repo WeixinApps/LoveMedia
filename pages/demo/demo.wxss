@@ -12,3 +12,12 @@
   width: 300rpx;
   height: 200rpx;
 }
+.demo-text-1{
+    background: rgb(9,186,7);
+}
+.demo-text-2{
+    background: rgb(247,97,96);
+}
+.demo-text-3{
+    background: rgb(15,174,255);
+}
