@@ -1,5 +1,6 @@
 //index.js
 //获取应用实例
+/*
 const app = getApp();
 const pageInstance = {
   data: {
@@ -24,4 +25,30 @@ const pageInstance = {
     })
   }
 };
+*/
+class Index{
+  constructor(){
+    this.app = getApp();
+    this.data = {
+      motto: 'Hello World',
+      userInfo: {}
+    };
+  }
+  bindViewTap(){
+    wx.navigateTo({
+      url:'../logs/logs'
+    });
+  }
+  onLoad(){
+    console.log('onLoad');
+    let _this = this;
+    let setUserInfo = function(userInfo){
+      _this.setData({
+        userInfo:userInfo
+      })
+    }
+    this.app.getUserInfo(setUserInfo);
+  }
+}
+let pageInstance = new Index();
 Page(pageInstance);
