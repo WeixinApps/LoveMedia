@@ -33,6 +33,7 @@ class Index{
       motto: 'Hello World',
       userInfo: {}
     };
+    this.bindViewTap = this.bindViewTap.bind(this);
   }
   bindViewTap(){
     wx.navigateTo({
