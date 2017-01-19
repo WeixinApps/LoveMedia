@@ -43,8 +43,8 @@ class Index{
   onLoad(){
     console.log('onLoad');
     let _this = this;
-    let setUserInfo = function(userInfo){
-      _this.setData({
+    let setUserInfo = (userInfo) => {
+      this.setData({
         userInfo:userInfo
       })
     }
