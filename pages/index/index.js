@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
-var app = getApp()
-Page({
+const app = getApp();
+const pageInstance = {
   data: {
     motto: 'Hello World',
     userInfo: {}
@@ -23,4 +23,5 @@ Page({
       })
     })
   }
-})
+};
+Page(pageInstance);
