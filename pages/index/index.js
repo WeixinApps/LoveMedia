@@ -33,6 +33,9 @@ class Index{
       motto: 'Hello World',
       userInfo: {}
     };
+    this.bindMethods();
+  }
+  bindMethods(){
     this.bindViewTap = this.bindViewTap.bind(this);
   }
   bindViewTap(){
