@@ -27,6 +27,14 @@ App({
       })
     }
   },
+  getLocation:function(cb){
+    wx.getLocation({
+      type: 'wgs84',
+      success: function (res){
+        typeof cb == "function" && cb(res)
+      }
+    });
+  },
   globalData:{
     userInfo:null
   }

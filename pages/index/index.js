@@ -31,6 +31,7 @@ class Index{
     this.app = getApp();
     this.data = {
       motto: 'Hello World',
+      location:{},
       userInfo: {}
     };
     this.bindMethods();
@@ -45,13 +46,17 @@ class Index{
   }
   onLoad(){
     console.log('onLoad');
-    let _this = this;
     let setUserInfo = (userInfo) => {
       this.setData({
         userInfo:userInfo
       })
     }
     this.app.getUserInfo(setUserInfo);
+    this.app.getLocation((location)=>{
+      this.setData({
+        location:location
+      })
+    });
   }
 }
 let pageInstance = new Index();
