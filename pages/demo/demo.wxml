@@ -7,7 +7,7 @@
       </view>
       <view class="page-section-spacing">
         <view class="flex-wrp" style="flex-direction:row;">
-          <view class="flex-item demo-text-1"></view>
+          <view class="flex-item demo-text-1" bindtap="showNewPage"></view>
           <view class="flex-item demo-text-2"></view>
           <view class="flex-item demo-text-3"></view>
         </view>
