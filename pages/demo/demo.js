@@ -7,7 +7,7 @@ class Demo{
   }
   showNewPage(){
     wx.navigateTo({
-      url:'../logs/logs'
+      url:'../newpage/newpage'
     });
   }
   onShareAppMessage(){
