@@ -5,7 +5,8 @@
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
   <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+    <!--<text class="user-motto">{{motto}}</text>-->
+    <navigator class="user-motto" url="../pageview/pageview" hover-class="navigator-hover">{{motto}}</navigator>
   </view>
   <view class="showLocation">
     <text class="user-location">{{location.latitude}},{{location.longitude}}</text>
